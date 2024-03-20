@@ -38,9 +38,15 @@ conda activate <pyenv-name>
 pip install -r requirements-dev.txt
 ```
 
-Using Python venv
+Using Python venv (MacOS)
 ```
 source <path-to-virtual-env-with-folder-being-env-name>/bin/activate
+pip install -r requirements-dev.txt
+```
+
+Using Python venv (Windows)
+```
+<path-to-virtual-env-with-folder-being-env-name>\Scripts\activate
 pip install -r requirements-dev.txt
 ```
 
