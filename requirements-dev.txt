@@ -1,0 +1,5 @@
+awscli
+awscli-local
+boto3
+black
+pytest
