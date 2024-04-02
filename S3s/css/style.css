@@ -1,0 +1,97 @@
+/* styles for the  login/signup page */
+body {
+    background-image: url('../images/login_signupBackground.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.logo {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* styles for the homepage */
+.navbar {
+    background-color: #f8f9fa;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    margin-bottom: 100px;
+}
+
+.navbar-brand img {
+    height: 30px;
+}
+
+.navbar-nav .nav-link {
+    color: #343a40;
+    font-weight: normal;
+}
+
+.navbar-nav .nav-link.active {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.item-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 80px 10px 10px;
+    width: 200px;
+    float: left;
+    background-color: #fff;
+}
+
+.item-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.item-card h5 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.item-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+@media (max-width: 767.98px) {
+    .navbar-collapse {
+        padding-top: 10px;
+    }
+    .navbar-nav .nav-link {
+        padding: 0.5rem 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .item-card {
+        margin: 10px;
+    }
+}
+
