@@ -1,4 +1,4 @@
-#!/bin/bash -xeu
+#!/bin/bash
 
 ## EC2 App
 apt update
