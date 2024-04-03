@@ -11,6 +11,13 @@ user_info = [
         "123 Main St, Anytown, CA 12345",
         "customer",
     ),
+    (
+        "abc",
+        "abc",
+        "guganesh99@gmail.com",
+        "123 Main St, Anytown, CA 12345",
+        "customer",
+    )
 ]
 
 product_info = [
@@ -326,7 +333,7 @@ def setup():
         ProvisionedThroughput={"ReadCapacityUnits": 50, "WriteCapacityUnits": 50},
     )
 
-    # Wait for tables to be created
+    # # Wait for tables to be created
     users_table.wait_until_exists()
     products_table.wait_until_exists()
     sales_table.wait_until_exists()
@@ -336,11 +343,11 @@ def setup():
     users_data = [
         {
             "id": i + 1,
-            "username": {"S": user_info[i][0]},
-            "password": {"S": user_info[i][1]},
-            "email": {"S": user_info[i][2]},
-            "shipping_address": {"S": user_info[i][3]},
-            "role": {"S": user_info[i][4]},
+            "username": user_info[i][0],
+            "password": user_info[i][1],
+            "email": user_info[i][2],
+            "shipping_address": user_info[i][3],
+            "role": user_info[i][4],
         }
         for i in range(len(user_info))
     ]
@@ -352,12 +359,12 @@ def setup():
     products_data = [
         {
             "id": i + 1,
-            "name": {"S": product_info[i][0]},
-            "category": {"S": product_info[i][1]},
-            "price": {"N": str(product_info[i][2])},
-            "description": {"S": product_info[i][3]},
-            "image_filename": {"S": product_info[i][4]},
-            "quantity": {"N": str(product_info[i][5])},
+            "name": product_info[i][0],
+            "category": product_info[i][1],
+            "price": int(product_info[i][2] * 100),
+            "description": product_info[i][3],
+            "image_filename": product_info[i][4],
+            "quantity": product_info[i][5],
         }
         for i in range(len(product_info))
     ]
