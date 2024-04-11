@@ -12,6 +12,23 @@
         {
             "Effect": "Allow",
             "Action": [
+                "glacier:ListVaults",
+                "glacier:ListJobs",
+                "glacier:InitiateJob",
+                "glacier:DescribeJob",
+                "glacier:GetJobOutput",
+                "glacier:UploadArchive",
+                "glacier:DeleteArchive",
+                "glacier:DeleteVault",
+                "glacier:DescribeVault",
+                "glacier:GetDataRetrievalPolicy",
+                "glacier:SetDataRetrievalPolicy"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
                 "elasticache:Describe*",
                 "elasticache:List*",
                 "elasticache:Access*",

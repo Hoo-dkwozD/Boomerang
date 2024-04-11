@@ -1,6 +1,6 @@
 /* styles for the  login/signup page */
 body {
-    background-image: url('../images/login_signupBackground.jpg');
+    background-image: url('http://localhost:4566/img-bucket/S3s/images/login_signupBackground.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
